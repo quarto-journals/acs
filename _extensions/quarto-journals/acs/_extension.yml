@@ -1,9 +1,12 @@
 title: ACS Journal Format
 author: Charles Teague
-version: 0.1.0
+version: 0.0.1
 contributes:
-  format:
+  formats:
     common:
       csl: american-chemical-society.csl
     pdf:
-      template-partials: ["doc-class.tex", "title.tex", "print-affiliation.tex"]
+      template-partials:
+        - "doc-class.tex"
+        - "title.tex"
+        - "print-affiliation.tex"
