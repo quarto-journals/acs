@@ -1,6 +1,8 @@
 # Quarto Template - American Chemical Society
 
-## Using the Template
+This is a Quarto template that assists you in creating a manuscript for an American Chemical Society journal (based upon the `achemso` LaTeX package). You can learn more about the `achemso` package [on CTAN](https://www.ctan.org/tex-archive/macros/latex/contrib/achemso).
+
+## Creating a New Article
 
 You can use this as a template to create an article for an ACS journal. To do this, use the following command:
 
@@ -28,6 +30,5 @@ format:
     keep-tex: true    
 ```
 
-## Notes
 
-The American Chemical Society recommends that you use the `achemso` package for LaTeX when preparing a manuscript for one of their journals. Learn more about `achemso` [here](https://www.ctan.org/tex-archive/macros/latex/contrib/achemso).
+
