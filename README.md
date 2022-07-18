@@ -32,8 +32,6 @@ format:
     keep-tex: true    
 ```
 
-### Template Preview
-
 You can view a preview of the rendered template at <https://quarto-journals.github.io/acs/>. 
 
 
