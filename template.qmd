@@ -4,21 +4,29 @@ author:
     note: A shared note
   - name: Fred T. Secondauthor
     affiliations: 
-      - "Current address: Some other place, Germany"
+      - name: Current address
+        city: Some other place
+        country: Germany
   - name: I. Ken Groupleader
     email: i.k.groupleader@unknown.uu
     phone: +123 (0)123 4445556
     fax: +123 (0)123 4445557
     affiliations: 
       - id: unknown1
-        name: Department of Chemistry, Unknown University, Unknown Town
+        name: Unknown University
+        department: Department of Chemistry
+        town: Unknown Town
       - id: second-uni
-        name: Department of Chemistry, Second University, Nearby Town
+        name: Second University
+        department: Department of Chemistry
+        town: Nearby Town
     note: A shared note
   - name: Susanne K. Laborator
     email: s.k.laborator@bigpharma.co
     affiliations: 
-      - Lead Discovery, BigPharma, Big Town, USA
+      - name: BigPharma
+        town: Big Town
+        country: USA
   - name: Kay T. Finally
     affiliations:
       - ref: second-uni
