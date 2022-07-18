@@ -32,7 +32,7 @@ author:
       - ref: second-uni
       - ref: unknown1
         
-title: A demonstration of the _achemso_ LaTeX class^[A footnote for the title]
+title: A demonstration of the _achemso_ {{< latex >}} class^[A footnote for the title]
 title-short: An _achemso_ demo
 keywords: American Chemical Society, LaTeX
 abstract: |

@@ -5,6 +5,8 @@ contributes:
   formats:
     common:
       csl: american-chemical-society.csl
+      shortcodes:
+        - fancy-text
     pdf:
       cite-method: natbib
       biblio-config: false
