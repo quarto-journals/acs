@@ -32,7 +32,7 @@ abstract: |
   This is an abstract for the _achemso_ document class demonstration document.  An abstract is only allowed for certain manuscript types.  The selection of `journal` and `manuscript` will determine if an abstract is valid.  If not, the class will issue an appropriate error.This is the abstract.
 bibliography: bibliography.bib
 format:
-  quarto-journals/acs-pdf:
+  acs-pdf:
     journal:
       id: jacsat  #This is an identifier for the target jour- nal: from https://pubs.acs.org/, the identifier is the part of the URL after https://pubs.acs.org/journal/, e.g. for J. Org. Chem. it would be joceah.
       type: article  #article, note, communication, review, letter, or perspectivee
