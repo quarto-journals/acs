@@ -30,5 +30,9 @@ format:
     keep-tex: true    
 ```
 
+### Template
+
+https://quarto-journals.github.io/acs/
+
 
 
