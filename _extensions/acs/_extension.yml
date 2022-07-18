@@ -7,6 +7,15 @@ contributes:
       csl: american-chemical-society.csl
       shortcodes:
         - fancy-text
+      filters:
+        - latex-environment
+      environments:
+        - scheme
+        - chart
+        - graph
+        - tocentry
+        - acknowledgement
+        - suppinfo
     pdf:
       cite-method: natbib
       biblio-config: false

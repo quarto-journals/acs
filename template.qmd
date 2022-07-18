@@ -42,17 +42,15 @@ bibliography: bibliography.bib
 format:
   acs-pdf:
     journal:
-      id: jacsat  #This is an identifier for the target jour- nal: from https://pubs.acs.org/, the identifier is the part of the URL after https://pubs.acs.org/journal/, e.g. for J. Org. Chem. it would be joceah.
+      id: jacsat  #This is an identifier for the target journal: from https://pubs.acs.org/, the identifier is the part of the URL after https://pubs.acs.org/journal/, e.g. for J. Org. Chem. it would be joceah.
       type: article  #article, note, communication, review, letter, or perspectivee
       layout: traditional #traditional or twocolumn, twocolumn currently broken for longtables
       hide-email: false # if enabled, hides email addresses (and fax/phone)
       abbreviations: IR,NMR,UV
   acs-html: default
-
 ---
 
-```{=tex}
-\begin{tocentry}
+:::{.tocentry}
 Some journals require a graphical entry for the Table of Contents.
 This should be laid out ``print ready'' so that the sizing of the
 text is correct.
@@ -68,8 +66,7 @@ content is too big: instead it will overflow the edge of the box.
 
 This box and the associated title will always be printed on a
 separate page at the end of the document.
-\end{tocentry}
-```
+:::
 
 ## Introduction
 
@@ -91,37 +88,26 @@ The class also handles notes to be added to the bibliography. These should be gi
 
 ### Floats
 
-New float types are automatically set up by the class file. The means graphics are included as follows (Scheme \ref{sch:example}). As illustrated, the float is \`\`here'' if possible.
+New float types are automatically set up by the class file. The means graphics are included as follows (@fig-example). As illustrated, the float is `here` if possible.
 
-```{=tex}
-\begin{scheme}
-  Your scheme graphic would go here: \texttt{.eps} format\\
-  for \LaTeX\, or \texttt{.pdf} (or \texttt{.png}) for pdf\LaTeX\\
-  \textsc{ChemDraw} files are best saved as \texttt{.eps} files:\\
-  these can be scaled without loss of quality, and can be\\
-  converted to \texttt{.pdf} files easily using \texttt{eps2pdf}.\\
-  %\includegraphics{graphic}
-  \caption{An example scheme}
-  \label{sch:example}
-\end{scheme}
-```
-```{r}
-#| lable: fig-test
-#| fig-cap: test caption
-#| echo: false
-plot(1:10)
-```
 
-```{=tex}
-\begin{figure}
-  As well as the standard float types \texttt{table}\\
-  and \texttt{figure}, the class also recognises\\
-  \texttt{scheme}, \texttt{chart} and \texttt{graph}.
-  \caption{An example figure}
-  \label{fgr:example}
-\end{figure}
-```
-Charts, figures and schemes do not necessarily have to be labelled or captioned. However, tables should always have a title. It is possible to include a number and label for a graphic without any title, using an empty argument to the \texttt{\textbackslash caption} macro.
+:::{.scheme}
+Your scheme graphic would go here: `.eps` format
+for {{< latex >}}, or `.pdf` (or `.png`) for pdf\\{{< latex >}}
+{{< smallcaps chemdraw >}} files are best saved as `.eps` files:
+these can be scaled without loss of quality, and can be
+converted to `.pdf` files easily using `eps2pdf`.
+::: 
+
+![An example scheme](placeholder.png){#fig-example}
+
+
+
+:::{#fig-example2 fig-cap="A second example figure"}
+As well as the standard float types `table` and `figure`, the class also recognises `scheme`, `chart` and `graph`.
+:::
+
+Charts, figures and schemes do not necessarily have to be labelled or captioned. However, tables should always have a title. It is possible to include a number and label for a graphic without any title, using an empty argument to the `\caption` macro.
 
 The use of the different floating environments is not required, but it is intended to make document preparation easier for authors. In general, you should place your graphics where they make logical sense; the production process will move them if needed.
 
@@ -179,7 +165,7 @@ You may add footnotes to ables as illustrated (@tbl-notes).
 
 [^2]: This is a second note
 
-The example file also loads the optional `mhchem` package, so that formulas are easy to input: \texttt{\textbackslash ce\{H2SO4\}} gives \ce{H2SO4}. See the use in the bibliography file (when using titles in the references section).
+The example file also loads the optional `mhchem` package, so that formulas are easy to input: `[H2SO4]{.ce}`gives [H2SO4]{.ce}. See the use in the bibliography file (when using titles in the references section).
 
 The use of new commands should be limited to simple things which will not interfere with the production process. For example, \texttt{\textbackslash mycommand} has been defined in this example, to give italic, mono-spaced text: \mycommand{some text}.
 
@@ -189,28 +175,24 @@ When producing communications for *J.\~Am. Chem. Soc.*, the class will automatic
 
 You should be able to use the same source to produce a JACS Communication and a normal article. For example, this demonstration file will work with both `type=article` and `type=communication`. Sections and any abstract are automatically ignored, although you will get warnings to this effect.
 
-```{=tex}
-\begin{acknowledgement}
+:::{.acknowledgement}
 
-Please use ``The authors thank \ldots'' rather than ``The
-authors would like to thank \ldots''.
+Please use "The authors thank {{< ldots >}}" rather than "The
+authors would like to thank {{< ldots >}}".
 
-The author thanks Mats Dahlgren for version one of \textsf{achemso},
-and Donald Arseneau for the code taken from \textsf{cite} to move
+The author thanks Mats Dahlgren for version one of `achemso`,
+and Donald Arseneau for the code taken from `cite` to move
 citations after punctuation. Many users have provided feedback on the
 class, which is reflected in all of the different demonstrations
 shown in this document.
+:::
 
-\end{acknowledgement}
-```
-```{=tex}
-\begin{suppinfo}
+:::{.suppinfo}
 
-This will usually read something like: ``Experimental procedures and
+This will usually read something like: "Experimental procedures and
 characterization data for all new compounds. The class will
 automatically add a sentence pointing to the information on-line:
 
-\end{suppinfo}
-```
+:::
 
 ## References
