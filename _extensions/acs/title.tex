@@ -3,11 +3,11 @@ $for(by-author)$
 $if(by-author.affiliations)$
 $if(by-author.affiliations/first)$
 $for(by-author.affiliations/first)$
-\affiliation{$print-affiliation.tex()$}
+\affiliation{$_affiliation.tex()$}
 $endfor$
 $if(by-author.affiliations/rest/first)$
 $for(by-author.affiliations/rest/first)$
-\affiliation{$print-affiliation.tex()$}
+\affiliation{$_affiliation.tex()$}
 $endfor$
 $endif$
 $endif$

@@ -13,4 +13,4 @@ contributes:
       template-partials:
         - "doc-class.tex"
         - "title.tex"
-        - "print-affiliation.tex"
+        - "_affiliation.tex"
