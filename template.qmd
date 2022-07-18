@@ -39,6 +39,8 @@ format:
       layout: traditional #traditional or twocolumn, twocolumn currently broken for longtables
       hide-email: false # if enabled, hides email addresses (and fax/phone)
       abbreviations: IR,NMR,UV
+  acs-html: default
+
 ---
 
 ```{=tex}
@@ -129,6 +131,7 @@ $$ {#eq-example}
 
 This can also be used to have equations containing graphical content. To align the equation number with the middle of the graphic, rather than the bottom, a minipage may be used.
 
+```{=latex}
 $$
   \begin{minipage}[c]{0.80\linewidth}
     \centering
@@ -138,10 +141,11 @@ $$
     %\includegraphics{graphic}
   \end{minipage}
 $$ {#eq-graphic}
+```
 
 ## Experimental
 
-The usual experimental details should appear here. This could include a table, which can be referenced as Table \[\@tbl-example\]. Notice that the caption is positioned at the top of the table.
+The usual experimental details should appear here. This could include a table, which can be referenced as @tbl-example. Notice that the caption is positioned at the top of the table.
 
 | Header one  | Header two  |
 |-------------|-------------|

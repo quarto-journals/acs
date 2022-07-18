@@ -6,6 +6,10 @@ contributes:
     common:
       csl: american-chemical-society.csl
     pdf:
+      cite-method: natbib
+      biblio-config: false
+      format-resources:
+        - achemso.bst
       template-partials:
         - "doc-class.tex"
         - "title.tex"
