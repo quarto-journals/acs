@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Andrew N. Other">
+<meta name="author" content="Fred T. Secondauthor">
+<meta name="author" content="I. Ken Groupleader">
+<meta name="author" content="Susanne K. Laborator">
+<meta name="author" content="Kay T. Finally">
+<meta name="keywords" content="American Chemical Society, LaTeX">
+
+<title>A demonstration of the achemso  class</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="template_files/libs/clipboard/clipboard.min.js"></script>
+<script src="template_files/libs/quarto-html/quarto.js"></script>
+<script src="template_files/libs/quarto-html/popper.min.js"></script>
+<script src="template_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="template_files/libs/quarto-html/anchor.min.js"></script>
+<link href="template_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="template_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="template_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="template_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="template_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">A demonstration of the <em>achemso</em> class<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    Andrew N. Other 
+  </div>
+      <div class="quarto-title-meta-contents">
+    Fred T. Secondauthor 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Current address
+          </p>
+      </div>
+      <div class="quarto-title-meta-contents">
+    I. Ken Groupleader 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Unknown University
+          </p>
+        <p class="affiliation">
+            Second University
+          </p>
+      </div>
+      <div class="quarto-title-meta-contents">
+    Susanne K. Laborator 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            BigPharma
+          </p>
+      </div>
+      <div class="quarto-title-meta-contents">
+    Kay T. Finally 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Second University
+          </p>
+        <p class="affiliation">
+            Unknown University
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Abstract</div>
+    <p>This is an example document for the <em>achemso</em> documentclass, intended for submissions to the American Chemical Society for publication. The class is based on the standard LaTeXe <em>report</em> file, and does not seek to reproduce the appearanceof a published paper. This is an abstract for the <em>achemso</em> document class demonstration document. An abstract is only allowed for certain manuscript types. The selection of <code>journal</code> and <code>manuscript</code> will determine if an abstract is valid. If not, the class will issue an appropriate error.This is the abstract.</p>
+  </div>
+</div>
+
+</header>
+
+<div class="tocentry">
+<p>Some journals require a graphical entry for the Table of Contents. This should be laid out ``print ready’’ so that the sizing of the text is correct.</p>
+<p>Inside the environment, the font used is Helvetica 8,pt, as required by <em>Journal of the American Chemical Society</em>.</p>
+<p>The surrounding frame is 9,cm by 3.5,cm, which is the maximum permitted for <em>Journal of the American Chemical Society</em> graphical table of content entries. The box will not resize if the content is too big: instead it will overflow the edge of the box.</p>
+<p>This box and the associated title will always be printed on a separate page at the end of the document.</p>
+</div>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This is a paragraph of text to fill the introduction of the demonstration file. The demonstration file attempts to show the modifications of the standard LaTeX macros that are implemented by the <code>achemso</code> class. These are mainly concerned with content, as opposed to appearance.</p>
+</section>
+<section id="results-and-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="results-and-discussion">Results and discussion</h2>
+<section id="outline" class="level3">
+<h3 class="anchored" data-anchor-id="outline">Outline</h3>
+<p>The document layout should follow the style of the journal concerned. Where appropriate, sections and subsections should be added in the normal way. If the class options are set correctly, warnings will be given if these should not be present.</p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<p>The class makes various changes to the way that references are handled. The class loads <code>natbib</code>, and also the appropriate bibliography style. References can be made using the normal method; the citation should be placed before any punctuation, as the class will move it if using a superscript citation style <span class="citation" data-cites="Garnier2007">(<a href="#ref-Garnier2007" role="doc-biblioref">Garnier, Gautrais, and Theraulaz 2007</a>)</span>. The use of <code>natbib</code> allows the use of the various citation commands of that package have shown something. Long lists of authors will be automatically truncated in most article formats, but not in supplementary information or reviews. If you encounter problems with the citation macros, please check that your copy of <code>natbib</code> is up to date. The demonstration database file <code>bibliography.bib</code> shows how to complete entries correctly.</p>
+<p>Multiple citations to be combined into a list can be given as a single citation. This uses the <code>mciteplus</code> package. Citations other than the first of the list should be indicated with a star.</p>
+<p>The class also handles notes to be added to the bibliography. These should be given in place in the document. As with citations, the text should be placed before punctuation. A note is also generated if a citation has an optional note. This assumes that the whole work has already been cited: odd numbering will result if this is not the case .</p>
+</section>
+<section id="floats" class="level3">
+<h3 class="anchored" data-anchor-id="floats">Floats</h3>
+<p>New float types are automatically set up by the class file. The means graphics are included as follows (<a href="#fig-example">Figure&nbsp;1</a>). As illustrated, the float is <code>here</code> if possible.</p>
+<div class="scheme">
+<p>Your scheme graphic would go here: <code>.eps</code> format for , or <code>.pdf</code> (or <code>.png</code>) for pdf\ files are best saved as <code>.eps</code> files: these can be scaled without loss of quality, and can be converted to <code>.pdf</code> files easily using <code>eps2pdf</code>.</p>
+</div>
+<div id="fig-example" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="placeholder.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 1: An example scheme</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-example2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p>As well as the standard float types <code>table</code> and <code>figure</code>, the class also recognises <code>scheme</code>, <code>chart</code> and <code>graph</code>.</p>
+<p></p><figcaption class="figure-caption">Figure 2: A second example figure</figcaption><p></p>
+</figure>
+</div>
+<p>Charts, figures and schemes do not necessarily have to be labelled or captioned. However, tables should always have a title. It is possible to include a number and label for a graphic without any title, using an empty argument to the <code>\caption</code> macro.</p>
+<p>The use of the different floating environments is not required, but it is intended to make document preparation easier for authors. In general, you should place your graphics where they make logical sense; the production process will move them if needed.</p>
+</section>
+<section id="maths" class="level3">
+<h3 class="anchored" data-anchor-id="maths">Math(s)</h3>
+<p>The <code>achemso</code> class does not load any particular additional support for mathematics. If packages such as <code>amsmath</code> are required, they should be loaded in the preamble. However, the basic LaTeX math(s) input should work correctly without this. Some inline material <span class="math inline">\(y = mx + c\)</span> or <span class="math inline">\(1 + 1 = 2\)</span> followed by some display.</p>
+<p><span class="math display">\[ A = \pi r^2 \]</span></p>
+<p>It is possible to label equations in the usual way (<a href="#eq-example">Equation&nbsp;1</a>).</p>
+<p><span id="eq-example"><span class="math display">\[
+  \frac{\mathrm{d}}{\mathrm{d}x} \, r^2 = 2r
+\tag{1}\]</span></span></p>
+<p>This can also be used to have equations containing graphical content. To align the equation number with the middle of the graphic, rather than the bottom, a minipage may be used.</p>
+<p><span id="eq-graphic"><span class="math display">\[
+  \begin{minipage}[c]{0.80\linewidth}
+    \centering
+    As illustrated here, the width of \\
+    the minipage needs to allow some  \\
+    space for the number to fit in to.
+    %\includegraphics{graphic}
+  \end{minipage}
+\tag{2}\]</span></span></p>
+</section>
+</section>
+<section id="experimental" class="level2">
+<h2 class="anchored" data-anchor-id="experimental">Experimental</h2>
+<p>The usual experimental details should appear here. This could include a table, which can be referenced as <a href="#tbl-example">Table&nbsp;1</a>. Notice that the caption is positioned at the top of the table.</p>
+<div id="tbl-example" class="anchored">
+<table class="table">
+<caption>Table 1: An example table</caption>
+<thead>
+<tr class="header">
+<th>Header one</th>
+<th>Header two</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entry one</td>
+<td>Entry two</td>
+</tr>
+<tr class="even">
+<td>Entry three</td>
+<td>Entry four</td>
+</tr>
+<tr class="odd">
+<td>Entry five</td>
+<td>Entry six</td>
+</tr>
+<tr class="even">
+<td>Entry seven</td>
+<td>Entry eight</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>You may add footnotes to ables as illustrated (<a href="#tbl-notes">Table&nbsp;2</a>).</p>
+<div id="tbl-notes" class="anchored">
+<table class="table">
+<caption>Table 2: An example table with notes</caption>
+<thead>
+<tr class="header">
+<th>Header one</th>
+<th>Header two</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entry one<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></td>
+<td>Entry two</td>
+</tr>
+<tr class="even">
+<td>Entry three<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></td>
+<td>Entry four</td>
+</tr>
+<tr class="odd">
+<td>Entry five</td>
+<td>Entry six</td>
+</tr>
+<tr class="even">
+<td>Entry seven</td>
+<td>Entry eight</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The example file also loads the optional <code>mhchem</code> package, so that formulas are easy to input: <code>[H2SO4]{.ce}</code>gives <span class="ce">H2SO4</span>. See the use in the bibliography file (when using titles in the references section).</p>
+<p>The use of new commands should be limited to simple things which will not interfere with the production process. For example, has been defined in this example, to give italic, mono-spaced text: .</p>
+</section>
+<section id="extra-information-when-writing-jacs-communications" class="level2">
+<h2 class="anchored" data-anchor-id="extra-information-when-writing-jacs-communications">Extra information when writing JACS Communications</h2>
+<p>When producing communications for <em>J.~Am. Chem. Soc.</em>, the class will automatically lay the text out in the style of the journal. This gives a guide to the length of text that can be accommodated in such a publication. There are some points to bear in mind when preparing a JACS Communication in this way. The layout produced here is a <em>model</em> for the published result, and the outcome should be taken as a <em>guide</em> to the final length. The spacing and sizing of graphical content is an area where there is some flexibility in the process. You should not worry about the space before and after graphics, which is set to give a guide to the published size. This is very dependant on the final published layout.</p>
+<p>You should be able to use the same source to produce a JACS Communication and a normal article. For example, this demonstration file will work with both <code>type=article</code> and <code>type=communication</code>. Sections and any abstract are automatically ignored, although you will get warnings to this effect.</p>
+<div class="acknowledgement">
+<p>Please use “The authors thank ” rather than “The authors would like to thank ”.</p>
+<p>The author thanks Mats Dahlgren for version one of <code>achemso</code>, and Donald Arseneau for the code taken from <code>cite</code> to move citations after punctuation. Many users have provided feedback on the class, which is reflected in all of the different demonstrations shown in this document.</p>
+</div>
+<div class="suppinfo">
+<p>This will usually read something like: “Experimental procedures and characterization data for all new compounds. The class will automatically add a sentence pointing to the information on-line:</p>
+</div>
+</section>
+<section id="references-1" class="level2 unnumbered">
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Garnier2007" class="csl-entry" role="doc-biblioentry">
+Garnier, Simon, Jacques Gautrais, and Guy Theraulaz. 2007. <span>“<span class="nocase">The biological principles of swarm intelligence</span>.”</span> <em>Swarm Intelligence</em> 1 (1): 3–31. <a href="https://doi.org/10.1007/s11721-007-0004-y">https://doi.org/10.1007/s11721-007-0004-y</a>.
+</div>
+</div></section><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1" role="doc-endnote"><p>A footnote for the title<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>This is a footnote<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>This is a second note<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
