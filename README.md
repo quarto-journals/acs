@@ -1,4 +1,4 @@
-# acs
+# American Chemical Society (acs)
 
 This is a Quarto template that assists you in creating a manuscript for American Chemical Society journals (based upon the `achemso` LaTeX package). You can learn more about the `achemso` package [on CTAN](https://www.ctan.org/tex-archive/macros/latex/contrib/achemso).
 
