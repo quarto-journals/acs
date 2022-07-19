@@ -55,11 +55,11 @@ Some journals require a graphical entry for the Table of Contents.
 This should be laid out ``print ready'' so that the sizing of the
 text is correct.
 
-Inside the \texttt{tocentry} environment, the font used is Helvetica
+Inside the `tocentry` environment, the font used is Helvetica
 8\,pt, as required by *Journal of the American Chemical
 Society*.
 
-The surrounding frame is 9\,cm by 3.5\,cm, which is the maximum
+The surrounding frame is 9cm by 3.5cm, which is the maximum
 permitted for  *Journal of the American Chemical Society*
 graphical table of content entries. The box will not resize if the
 content is too big: instead it will overflow the edge of the box.
@@ -165,9 +165,9 @@ You may add footnotes to ables as illustrated (@tbl-notes).
 
 [^2]: This is a second note
 
-The example file also loads the optional `mhchem` package, so that formulas are easy to input: `[H2SO4]{.ce}`gives [H2SO4]{.ce}. See the use in the bibliography file (when using titles in the references section).
+The example file also loads the optional `mhchem` package, so that formulas are easy to input: `[H2SO4]{.ce}` gives [H2SO4]{.ce}. See the use in the bibliography file (when using titles in the references section).
 
-The use of new commands should be limited to simple things which will not interfere with the production process. For example, \texttt{\textbackslash mycommand} has been defined in this example, to give italic, mono-spaced text: \mycommand{some text}.
+The use of new commands should be limited to simple things which will not interfere with the production process. For example, `\textbackslash mycommand` has been defined in this example, to give italic, mono-spaced text: \mycommand{some text}.
 
 ## Extra information when writing JACS Communications
 

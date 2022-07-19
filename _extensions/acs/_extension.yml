@@ -16,6 +16,8 @@ contributes:
         - tocentry
         - acknowledgement
         - suppinfo
+      commands:
+        - ce
     pdf:
       cite-method: natbib
       biblio-config: false
