@@ -1,17 +1,17 @@
 %%
-%% This is file `achemso.bst',
+%% This is file `biochem.bst',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
 %%
-%% achemso.dtx  (with options: `bst')
+%% achemso.dtx  (with options: `bst,bio')
 %% 
 %% IMPORTANT NOTICE:
 %% 
 %% For the copyright see the source file.
 %% 
 %% Any modified versions of this file must be renamed
-%% with new filenames distinct from achemso.bst.
+%% with new filenames distinct from biochem.bst.
 %% 
 %% For distribution of the original source see the terms
 %% for copying and modification in the file achemso.dtx.
@@ -891,6 +891,10 @@ FUNCTION { format.names.loop } {
                 { add.comma }
                 { add.semicolon }
               if$
+              remaining.names.int #1 >
+                { }
+                { bbl.and add.space * }
+              if$
               swap$
               *
             }
@@ -1056,7 +1060,7 @@ FUNCTION { format.authors } {
   author empty$
     { }
     {
-      author names.separate.semicolon format.names
+      author names.separate.comma format.names
       output
       next.punct.space 'next.punct.int :=
     }
@@ -1424,8 +1428,9 @@ FUNCTION { format.year.article } {
   year empty$
     { }
     {
-      year bold
+      year paren
       output
+      next.punct.space 'next.punct.int :=
     }
   if$
 }
@@ -1464,9 +1469,9 @@ FUNCTION { format.volume } {
 FUNCTION { article } {
   begin.bibitem
   format.authors
+  format.year.article
   format.title.article
   format.journal
-  format.year.article
   format.volume.article
   format.pages.article
   format.note
@@ -1512,6 +1517,7 @@ FUNCTION { incollection } { book }
 FUNCTION { inpress } {
   begin.bibitem
   format.authors
+  format.year.article
   format.journal.unpub
   doi empty$
     {
@@ -1519,7 +1525,6 @@ FUNCTION { inpress } {
       output
     }
     {
-      format.year.article
       next.punct.comma 'next.punct.int :=
       format.doi
     }
@@ -1742,4 +1747,4 @@ EXECUTE { end.bib }
 %%                                 a number of configuration files.
 %% 
 %%
-%% End of file `achemso.bst'.
+%% End of file `biochem.bst'.
