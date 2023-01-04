@@ -134,7 +134,7 @@ $$
     space for the number to fit in to.
     %\includegraphics{graphic}
   \end{minipage}
-$$ {#eq-graphic}
+$$
 ```
 
 ## Experimental
